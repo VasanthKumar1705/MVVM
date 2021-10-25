@@ -8,14 +8,14 @@
 import Foundation
 
 // MARK: - Root
-struct Root: Codable {
+class Employees: Codable {
     let status: String
     let data: [EmployeeData]
     let message: String
 }
 
 // MARK: - EmployeeData
-struct EmployeeData: Codable {
+class EmployeeData: Codable {
     let id: Int
     let employeeName: String
     let employeeSalary, employeeAge: Int

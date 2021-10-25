@@ -20,7 +20,7 @@ struct Parser {
             }
             do {
                 if let data = data {
-                    let results = try JSONDecoder().decode(Root.self, from: data)
+                    let results = try JSONDecoder().decode(Employees.self, from: data)
                     print("results---->\(results)")
                     completion(results.data)
                 }else {
